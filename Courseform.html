@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FORM</title>
+  </head>
+  <body>
+    <h1>Course Registration Form</h1>
+    <form>
+      <fieldset>
+        <legend>Personal Details</legend>
+        <table>
+          <tr>
+            <td>
+              <label for="FName">FirstName</label>
+            </td>
+            <td>
+              <input type="text" name="FName" id="Fname" placeholder="Bhavya" />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="SName">Surname</label></td>
+            <td>
+              <input type="text" name="SName id=" SName placeholder="v" />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="mail">Email</label></td>
+            <td>
+              <input
+                type="Email"
+                name="mail"
+                id="mail"
+                placeholder="@bhvyavbs23.com"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="Password">Password</label></td>
+            <td>
+              <input type="password" name="password" id="password" />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="Cpassword">ConfirmPassword</label></td>
+            <td>
+              <input type="password" name="Cpassword" id="Cpassword" />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="dob">Date-of-Birth</label></td>
+            <td><input type="date" name="dob" id="dob" /></td>
+          </tr>
+          <tr>
+            <td><label for="NUM">PhoneNo</label></td>
+            <td>
+              <input type="tel" name="NUM" id="NUM" placeholder="9112345923" />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="age">Age</label></td>
+            <td>
+              <input
+                type="number"
+                name="age"
+                id="age"
+                min="18"
+                max="60"
+                placeholder="18"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="g">Gender</label>
+            </td>
+            <td>
+              <input type="radio" name="g" id="male" value="Male" />
+              <label for="male">Male</label>
+
+              <input type="radio" name="g" id="Female" value="Female" />
+              <label for="Female">Female</label>
+
+              <input type="radio" name="g" id="others" value="others" />
+              <label for="others">Others</label>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="country">Country</label></td>
+            <td>
+              <select name="country" id="country">
+                <option value="India">India</option>
+                <option disabled value="USA">United States</option>
+                <option value="UK">United Kingdom</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="fb">Feedback</label></td>
+            <td>
+              <textarea id="fb" name="fb" rows="5" columns="7"></textarea>
+            </td>
+          </tr>
+
+          <tr>
+            <button type="submit">Sumbit</button>
+          </tr>
+        </table>
+      </fieldset>
+      <br />
+
+      <fieldset>
+        <legend>Course Details</legend>
+        <table>
+          <tr>
+            <td><label for="Course">Courses</label></td>
+            <td>
+              <select name="Course" id="course">
+                <option value="JAVA Full Stack">JAVA FULL STACK</option>
+                <option value="PYTHON Full Stack">PYTHON Full Stack"</option>
+                <option value="DATA SCIENCE">DATA SCIENCE</option>
+                <option value="DATA ANALYST">DATA ANALYST</option>
+                <option value="JAVA Full Stack-MERN">
+                  JAVA FULL STACK-MERN
+                </option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="mode">Mode of Course</label></td>
+
+            <td>
+              <input type="radio" name="mode" id="mode" value="online" />
+              <label for="online">online</label>
+
+              <input type="radio" name="mode" id="mode" value="offline" />
+              <label for="offline">offline</label>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label>Experinece</label>
+              <input type="range" min="0" max="10" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <lable for="cmts">Comments</lable><br />
+              <textarea name="cmts" id="cmts" width="35" height="40"></textarea>
+            </td>
+            <br />
+          </tr>
+          <tr>
+            <td><input type="submit" /></td>
+          </tr>
+        </table>
+      </fieldset>
+    </form>
+  </body>
+</html>
